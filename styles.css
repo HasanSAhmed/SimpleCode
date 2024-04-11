@@ -1,1 +1,88 @@
+html{
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-color: #132257;
+    color: white;
+  scroll-behaviour:smooth;
+}
 
+
+h1 {
+  
+}
+
+h2 {
+  
+}
+
+h3 {
+  
+}
+
+.desc{
+  
+}
+
+.html{
+
+}
+
+.css{
+  
+}
+
+.js{
+  
+}
+
+.output{
+  
+}
+
+
+textarea{
+  font-family: "Lucida Console", "Courier New", monospace;
+  border-radius:6px;
+  width:80%;
+  height:10rem;
+}
+
+iframe{
+  font-family: "Lucida Console", "Courier New", monospace;
+  border-radius:6px;
+  width:80%;
+  height:10rem;
+  background:white;
+  border:0;
+  outline0:0;
+}
+
+button{
+  background:black;
+  color:white;
+  border:0;
+  border-radius:6px;
+  width:7rem;
+  height:1.5rem;
+  font-family: "Lucida Console", "Courier New", monospace;
+  position:relative;
+}
+.cell {
+  
+  cursor: cell;
+}
+
+a{
+  text-decoration:none;
+  color: white;
+  
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+button:hover{
+  background-color:white;
+  color:#132257;
+  font-weight:bold;
+}
