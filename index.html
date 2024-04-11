@@ -1,1 +1,59 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SimpleCode</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="cell">
+    <h1>SimpleCode.</h1>
+    <p id="desc">A Simple Code Editor.
+    <div>
+    <h4>HTML</h4>
+    <textarea  id="html" onkeyup="run()"></textarea>
+    </div>
+    
+    <div>
+    <h4>CSS</h4>
+    <textarea  id="css" onkeyup="run()"></textarea>
+    </div>
+    
+    <div>
+    <h4>JS</h4>
+    <textarea  id="js" onkeyup="run()"></textarea>
+    </div>
+    
+     <div>
+    <h4>Run.</h4>
+    <iframe id="output"></iframe>
+    </div>
+    
+	<script src="styles.js"></script>
+  
+  <footer>
+    <div id="footer">
+      <a href="https://github.com/HasanSAhmed/SimpleCode">Open Source.</a>
+      <br>
+      <a href="https://github.com/HasanSAhmed">Made By Hasan Ahmed.</a>
+      <br>
+      <a href="https://www.instagram.com/hasansahmedd/">Contact.</a>
+      <div class="buttons">
+        <button id="topbtn" onclick="backToTop()">Back to Top</button>
+      </div>
+      </div>
+    </footer>
+    <script>
+      function run(){
+        let html = document.getElementById("html").value;
+      let css = document.getElementById("css").value;
+      let js = document.getElementById("js").value;
+      let output = document.getElementById("output");
+        
+        output.contentDocument.body.innerHTML = html + "<style>" + css + "</style>";
+        output.contentWindow.eval(js);
+      }
+      </script>
+    </body>
+</html>
